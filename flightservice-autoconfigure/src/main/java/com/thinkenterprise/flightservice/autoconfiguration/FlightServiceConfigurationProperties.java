@@ -1,4 +1,4 @@
-package com.thinkenterprise.flightservice.configuration;
+package com.thinkenterprise.flightservice.autoconfiguration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

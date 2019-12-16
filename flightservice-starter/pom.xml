@@ -7,23 +7,23 @@
     <version>0.0.1-SNAPSHOT</version>
 	<name>flightservice-starter</name>
 
-<!--
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>2.2.0.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
-    <parent>
-        <groupId>com.thinkenterprise</groupId>
-        <artifactId>flightservice-custom-starter</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../../flightservice-custom-starter</relativePath>
-    </parent>
-
--->
-
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.1.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <flightservice.version>0.0.1-SNAPSHOT</flightservice.version>
+        <spring-boot.version>1.5.2.RELEASE</spring-boot.version>
+    </properties>
 
 
     <dependencies>
@@ -31,7 +31,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>${spring-boot.version}</version>
         </dependency>
 
         <dependency>
@@ -48,24 +47,18 @@
 
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven-compiler-plugin.version}</version>
+ 	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <skip>true</skip>
                 </configuration>
-            </plugin>
-        </plugins>
-    </build>
+ 				
+			</plugin>
+		</plugins>
+	</build>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <flightservice.version>0.0.1-SNAPSHOT</flightservice.version>
-        <spring-boot.version>1.5.2.RELEASE</spring-boot.version>
-    </properties>
 
 </project>

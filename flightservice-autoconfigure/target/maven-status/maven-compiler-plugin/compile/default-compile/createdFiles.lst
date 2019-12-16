@@ -1,1 +1,3 @@
 com\thinkenterprise\flightservice\autoconfiguration\FlightServiceAutoConfiguration.class
+com\thinkenterprise\flightservice\autoconfiguration\FlightServiceConfigurationProperties.class
+META-INF\spring-configuration-metadata.json

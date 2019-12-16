@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "flightservice",
+      "type": "com.thinkenterprise.flightservice.autoconfiguration.FlightServiceConfigurationProperties",
+      "sourceType": "com.thinkenterprise.flightservice.autoconfiguration.FlightServiceConfigurationProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "flightservice.tax-rate",
+      "type": "java.lang.Float",
+      "sourceType": "com.thinkenterprise.flightservice.autoconfiguration.FlightServiceConfigurationProperties"
+    }
+  ],
+  "hints": []
+}
